@@ -10,7 +10,7 @@ export default function ConnectMe() {
             <div className="flex justify-center">
                 <h3 className="text-white text-md italic font-bold [text-shadow:_0_4px_4px_rgb(0_255_0_/_0.5)]">Let's Connect:</h3>
             </div>
-            <div className="flex justify-center gap-x-2 px-52 py-1">
+            <div className="flex justify-center gap-x-2 px-4 sm:px-10 md:px-20 lg:px-32 xl:px-52 py-1">
                 <div>
                     <a href="https://github.com/nkill-star" target="_blank" rel="noopener noreferrer">
                         <img className="w-5 cursor-pointer" src="/github.png"></img>
