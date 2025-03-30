@@ -16,6 +16,7 @@ export default function Tech() {
                 <div><img className="w-24 sm:w-28 md:w-32 lg:w-40" src="/node.png" /></div>
                 <div><img className="w-24 sm:w-28 md:w-32 lg:w-40" src="/express.png" /></div>
                 <div><img className="w-14 sm:w-16 md:w-20" src="/mongo.png" /></div>
+                
             </div>
         </div>
 
