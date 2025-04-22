@@ -18,7 +18,7 @@ export default function About() {
 
             <div className="flex justify-center">
                 <a
-                    href="/Nikhil S Richie Resume.pdf"
+                    href="/Nikhil_S_Richie_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer">
                     <button className="text-white rounded-2xl text-xs bg-black shadow-[0_0_20px_5px_rgba(0,255,0,0.5)] px-10 py-1 hover:shadow-[0_0_25px_7px_rgba(0,255,0,0.8)] transition">RESUME</button>
