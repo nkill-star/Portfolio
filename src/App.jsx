@@ -165,7 +165,7 @@ function App() {
               <div className="profile-name">Nikhil S Richie</div>
               <div className="profile-role">Software Developer</div>
               <div className="profile-line" />
-              <div className="profile-stats"><div><strong>2024</strong><span>Graduated</span></div><div><strong>?</strong><span>Learning</span></div><div><strong>06</strong><span>Featured</span></div></div>
+              <div className="profile-stats"><div><strong>2024</strong><span>Graduated</span></div><div><strong>∞</strong><span>Learning</span></div><div><strong>04</strong><span>Featured</span></div></div>
               <div className="terminal"><span>$</span> whoami <b>nikhil</b><i>_</i></div>
             </div>
           </div>
