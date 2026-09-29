@@ -7,15 +7,15 @@ export default function Tech() {
                 </h2>
             </div>
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-10 md:px-20 lg:px-32 py-5">
-                <div><img className="w-14 sm:w-16 md:w-20" src="/html.png" /></div>
-                <div><img className="w-14 sm:w-16 md:w-20" src="/css.png" /></div>
-                <div><img className="w-14 sm:w-16 md:w-20" src="/bootstrap.png" /></div>
-                <div><img className="w-14 sm:w-16 md:w-20" src="/javascript.png" /></div>
+                <div><img className="w-14 sm:w-16 md:w-20" src="/html.webp" /></div>
+                <div><img className="w-14 sm:w-16 md:w-20" src="/css.webp" /></div>
+                <div><img className="w-14 sm:w-16 md:w-20" src="/bootstrap.webp" /></div>
+                <div><img className="w-14 sm:w-16 md:w-20" src="/javascript.webp" /></div>
             </div>
             <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-10 md:px-20 lg:px-32 py-5">
                 <div><img className="w-24 sm:w-28 md:w-32 lg:w-40" src="/node.png" /></div>
-                <div><img className="w-24 sm:w-28 md:w-32 lg:w-40" src="/express.png" /></div>
-                <div><img className="w-14 sm:w-16 md:w-20" src="/mongo.png" /></div>
+                <div><img className="w-24 sm:w-28 md:w-32 lg:w-40" src="/express.webp" /></div>
+                <div><img className="w-14 sm:w-16 md:w-20" src="/mongo.webp" /></div>
             </div>
         </div>
 

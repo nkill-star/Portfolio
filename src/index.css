@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-body{
-  @apply font-sans;
-  background-color: black;
-}
+:root { font-family: 'Manrope', sans-serif; color: #f4f7f5; background: #050706; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #050706; }
+body { margin: 0; min-width: 320px; background: #050706; }
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: rgba(125, 255, 170, .25); color: #fff; }
