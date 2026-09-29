@@ -1,12 +1,12 @@
 
 import './App.css'
-import About from './components/About'
-import ConnectMe from './components/ConnectMe'
-import LearningStack from './components/LearningStack'
-import Navbar from './components/Navbar'
-import Profile from './components/Profile'
-import Projects from './components/Projects'
-import Tech from './components/Tech'
+// import About from './components/About'
+// import ConnectMe from './components/ConnectMe'
+// import LearningStack from './components/LearningStack'
+// import Navbar from './components/Navbar'
+// import Profile from './components/Profile'
+// import Projects from './components/Projects'
+// import Tech from './components/Tech'
 
 const projects = [
   // {
@@ -143,7 +143,7 @@ function App() {
         <section className="hero section" id="home">
           <div className="hero-copy reveal">
             <div className="eyebrow"><span className="status-dot" /> Available for opportunities</div>
-            <p className="hero-kicker">SOFTWARE DEVELOPER · CLOUD & DEVOPS ENTHUSIAST</p>
+            <p className="hero-kicker">SOFTWARE DEVELOPER ï¿½ CLOUD & DEVOPS ENTHUSIAST</p>
             <h1>Building digital experiences with <span>curiosity</span> and code.</h1>
             <p className="hero-text">I'm Nikhil S Richie, a Computer Science graduate passionate about cloud technologies, AWS, and DevOps</p>
             <div className="hero-actions">
@@ -152,7 +152,7 @@ function App() {
             </div>
             <div className="hero-meta">
               <span><Icon name="map" size={16} /> Kerala, India</span>
-              <span><Icon name="code" size={16} /> React · Node · AWS</span>
+              <span><Icon name="code" size={16} /> React ï¿½ Node ï¿½ AWS</span>
             </div>
           </div>
 
@@ -174,8 +174,8 @@ function App() {
         <section className="section about" id="about">
           <div className="section-heading reveal"><span>01 / ABOUT</span><h2>A developer who likes to <em>build</em> and keep learning.</h2></div>
           <div className="about-grid">
-            <div className="about-copy reveal"><p>I’m an aspiring AWS DevOps Engineer with a B.Tech in Computer Science and professional experience in software development. My development background has given me a strong foundation in programming, web technologies, APIs, databases, Git, and application development workflows. Alongside this, I’m currently expanding my knowledge of AWS and cloud technologies, with hands-on learning in services such as EC2, VPC, IAM, and S3, as well as Linux and cloud infrastructure concepts.</p>
-                                                <p>I’m passionate about understanding how applications are built, deployed, managed, and scaled in real-world environments. I’m particularly interested in cloud infrastructure, automation, CI/CD, containerization, monitoring, and DevOps practices. I enjoy learning through practical projects and continuously improving my technical skills, with the goal of growing into a well-rounded AWS DevOps Engineer who can bridge software development and cloud infrastructure.</p><a className="text-link" href="/Nikhil_S_Richie_Resume.pdf" target="_blank" rel="noreferrer">View my resume <Icon name="arrow" size={16} /></a></div>
+            <div className="about-copy reveal"><p>Iï¿½m an aspiring AWS DevOps Engineer with a B.Tech in Computer Science and professional experience in software development. My development background has given me a strong foundation in programming, web technologies, APIs, databases, Git, and application development workflows. Alongside this, Iï¿½m currently expanding my knowledge of AWS and cloud technologies, with hands-on learning in services such as EC2, VPC, IAM, and S3, as well as Linux and cloud infrastructure concepts.</p>
+                                                <p>Iï¿½m passionate about understanding how applications are built, deployed, managed, and scaled in real-world environments. Iï¿½m particularly interested in cloud infrastructure, automation, CI/CD, containerization, monitoring, and DevOps practices. I enjoy learning through practical projects and continuously improving my technical skills, with the goal of growing into a well-rounded AWS DevOps Engineer who can bridge software development and cloud infrastructure.</p><a className="text-link" href="/Nikhil_S_Richie_Resume.pdf" target="_blank" rel="noreferrer">View my resume <Icon name="arrow" size={16} /></a></div>
             <div className="about-cards reveal delay-one">
               <div className="mini-card"><span>01</span><strong>Web Development</strong><p>Responsive interfaces and full-stack applications.</p></div>
               <div className="mini-card"><span>02</span><strong>Cloud Fundamentals</strong><p>Hands-on AWS labs and server-side practice.</p></div>
@@ -199,7 +199,7 @@ function App() {
 
               <div>
                 <h3>PPLIO Technologies</h3>
-                <p>Thiruvananthapuram, Kerala, India · Remote</p>
+                <p>Thiruvananthapuram, Kerala, India ï¿½ Remote</p>
               </div>
             </div>
 
@@ -216,7 +216,7 @@ function App() {
                     </div>
 
                     <div className="experience-date">
-                      Mar 2026 – May 2026
+                      Mar 2026 ï¿½ May 2026
                       <small>3 mos</small>
                     </div>
                   </div>
@@ -239,7 +239,7 @@ function App() {
                     </div>
 
                     <div className="experience-date">
-                      Sep 2025 – Mar 2026
+                      Sep 2025 ï¿½ Mar 2026
                       <small>7 mos</small>
                     </div>
                   </div>
@@ -294,7 +294,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="footer"><span></span><span>© {new Date().getFullYear()} Nikhil S Richie</span><a href="#home">Back to top ?</a></footer>
+      <footer className="footer"><span></span><span>ï¿½ {new Date().getFullYear()} Nikhil S Richie</span><a href="#home">Back to top ?</a></footer>
     </div>
   )
 }
