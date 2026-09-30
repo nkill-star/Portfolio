@@ -490,100 +490,72 @@ h1 span {
     gap: 12px
 } */
 
+/* =========================
+   TOOLKIT SLIDER
+========================= */
+
 .stack-slider {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  padding: 10px 0 20px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0 20px;
 }
 
 .stack-track {
-  display: flex;
-  width: max-content;
-  gap: 14px;
-  /* animation: stackFloat 25s linear infinite; */
+    display: flex;
+    width: max-content;
+    gap: 14px;
+    will-change: transform;
+    animation: stackFloat 35s linear infinite;
 }
 
 .stack-card {
-  flex: 0 0 160px;
-  height: 135px;
+    flex: 0 0 160px;
+    height: 135px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 13px;
-
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: rgba(255,255,255,.02);
-
-  transition: .3s;
-}
-
-.stack-card:hover {
-  transform: translateY(-5px);
-  background: rgba(156,255,186,.045);
-  border-color: rgba(156,255,186,.22);
-}
-
-.stack-card img {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
-}
-
-.stack-card span {
-  font: 11px var(--mono);
-  color: #8d9992;
-  text-align: center;
-}
-
-@keyframes stackFloat {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(calc(-50% - 7px));
-  }
-}
-
-.stack-track {
-  animation: stackFloat 35s linear infinite;
-}
-
-
-.stack-card {
-    min-height: 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 13px;
+
     border: 1px solid var(--line);
     border-radius: 18px;
     background: rgba(255, 255, 255, .02);
-    transition: .3s
+
+    transition: .3s;
 }
 
 .stack-card:hover {
     transform: translateY(-5px);
     background: rgba(156, 255, 186, .045);
-    border-color: rgba(156, 255, 186, .22)
+    border-color: rgba(156, 255, 186, .22);
 }
 
 .stack-card img {
     width: 55px;
     height: 55px;
-    object-fit: contain
+    object-fit: contain;
+    display: block;
 }
 
 .stack-card span {
     font: 11px var(--mono);
     color: #8d9992;
-    text-align: center
+    text-align: center;
 }
+
+@keyframes stackFloat {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(calc(-50% - 7px), 0, 0);
+    }
+}
+
+
 
 .learning-grid {
     display: grid;

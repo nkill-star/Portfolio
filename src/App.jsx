@@ -82,6 +82,9 @@ const projects = [
 ]
 
 const stack = [
+  ['EC2', '/aws-ec2.svg'],
+  ['VPC', '/AWS-VPC.png'],
+  ['S3', '/s3.png'],
   ['HTML5', '/html.webp'],
   ['CSS3', '/css.webp'],
   ['JavaScript', '/javascript.webp'],
@@ -91,6 +94,7 @@ const stack = [
   ['MongoDB', '/mongo.webp'],
   ['React', '/react.png'],
   ['Tailwind CSS', '/tailwind.png'],
+  
 ]
 
 const learning = [
@@ -256,15 +260,13 @@ function App() {
         </section>
 
         <section className="section" id="stack">
-          <div className="section-heading reveal"><span>03 / TOOLKIT</span><h2>Technologies I use to <em>create</em>.</h2></div>
-          {/* <div className="stack-grid reveal delay-one">
-            {stack.map(([name, image]) => <div className="stack-card" key={name}><img src={image} alt="" /><span>{name}</span></div>)}
-          </div> */}
+          <div className="section-heading reveal"><span>03 / TOOLKIT</span><h2>Technologies I'm <em>familiar with</em>.</h2></div>
+          
           <div className="stack-slider">
           <div className="stack-track">
             {[...stack, ...stack].map(([name, image], index) => (
               <div className="stack-card" key={`${name}-${index}`}>
-                <img src={image} alt="" />
+                <img src={image} alt={name} decoding="async" />
                 <span>{name}</span>
               </div>
             ))}
