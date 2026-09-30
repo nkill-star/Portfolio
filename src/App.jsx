@@ -259,7 +259,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="stack">
+        {/* <section className="section" id="stack">
           <div className="section-heading reveal"><span>03 / TOOLKIT</span><h2>Technologies I'm <em>familiar with</em>.</h2></div>
           
           <div className="stack-slider">
@@ -272,7 +272,202 @@ function App() {
             ))}
           </div>
         </div>
-        </section>
+        </section> */}
+
+        <section className="section" id="stack">
+  <div className="section-heading reveal">
+    <span>03 / TOOLKIT</span>
+    <h2>
+      Technologies I'm <em>familiar with</em>.
+    </h2>
+  </div>
+
+  <div className="tech-stack">
+
+    {/* CLOUD & DEVOPS */}
+    <div className="cloud-section reveal">
+
+      <div className="cloud-header">
+        <div>
+          <span className="cloud-icon">☁</span>
+
+          <div>
+            <h3>Cloud & DevOps</h3>
+            <p>
+              Building, deploying and managing cloud solutions with AWS.
+            </p>
+          </div>
+        </div>
+
+        <span className="primary-focus">
+          ✦ Primary Focus
+        </span>
+      </div>
+
+      <div className="cloud-content">
+
+        {/* AWS MAIN CARD */}
+        <div className="aws-card">
+          <img src="/aws-light.webp" alt="AWS" />
+
+          <h4>Amazon Web Services</h4>
+
+          <p>
+            Scalable&nbsp; • &nbsp;Secure&nbsp; • &nbsp;Reliable
+          </p>
+        </div>
+
+        <div className="cloud-divider"></div>
+
+        {/* AWS SERVICES */}
+        <div className="services-section">
+
+          <h5>Key Services I Work With</h5>
+
+          <div className="service-grid">
+
+            <div className="service-card">
+              <img src="/aws-ec2.svg" alt="Amazon EC2" />
+              <h4>Amazon EC2</h4>
+              <p>
+                Scalable compute
+                <br />
+                instances in the cloud.
+              </p>
+            </div>
+
+            <div className="service-card">
+              <img src="/s3.png" alt="Amazon S3" />
+              <h4>Amazon S3</h4>
+              <p>
+                Scalable object
+                <br />
+                storage service.
+              </p>
+            </div>
+
+            <div className="service-card">
+              <img src="/AWS-VPC.png" alt="Amazon VPC" />
+              <h4>Amazon VPC</h4>
+              <p>
+                Isolated virtual
+                <br />
+                network in the cloud.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    {/* OTHER TECHNOLOGIES */}
+    <div className="other-tech reveal">
+
+      <h3>Other Technologies</h3>
+
+      <p className="other-description">
+        Additional tools and technologies I use for development and deployment.
+      </p>
+
+      <div className="tech-categories">
+
+        {/* FRONTEND */}
+        <div className="tech-category">
+          <h4>Frontend</h4>
+
+          <div className="tech-items">
+
+            <div className="tech-item">
+              <img src="/html.webp" alt="HTML" />
+              <span>HTML</span>
+            </div>
+
+            <div className="tech-item">
+              <img src="/css.webp" alt="CSS" />
+              <span>CSS</span>
+            </div>
+
+            <div className="tech-item">
+              <img src="/javascript.webp" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+
+            <div className="tech-item">
+              <img src="/react.png" alt="React" />
+              <span>React</span>
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* BACKEND */}
+        <div className="tech-category">
+          <h4>Backend</h4>
+
+          <div className="tech-items">
+
+            <div className="tech-item">
+              <img src="/python.png" alt="Python" />
+              <span>Python</span>
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* DATABASE */}
+        <div className="tech-category">
+          <h4>Database</h4>
+
+          <div className="tech-items">
+
+            <div className="tech-item">
+              <img src="/mongo.webp" alt="MongoDB" />
+              <span>MongoDB</span>
+            </div>
+
+            <div className="tech-item">
+              <img src="/MySQL.png" alt="MongoDB" />
+              <span>MySQL</span>
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* TOOLS */}
+        <div className="tech-category">
+          <h4>Tools</h4>
+
+          <div className="tech-items">
+
+            <div className="tech-item">
+              <img src="/git.png" alt="Git" />
+              <span>Git</span>
+            </div>
+
+            <div className="tech-item">
+              <img src="/github.webp" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
+
+            <div className="tech-item">
+              <img src="/vs-code.png" alt="VS Code" />
+              <span>VS Code</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
         <section className="section learning" id="learning">
           <div className="section-heading reveal"><span>04 / CURRENTLY LEARNING</span><h2>Moving from building apps to understanding the <em>infrastructure</em> behind them.</h2></div>

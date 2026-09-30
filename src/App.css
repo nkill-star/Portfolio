@@ -484,77 +484,273 @@ h1 span {
     margin: 0
 }
 
-/* .stack-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px
-} */
+
 
 /* =========================
-   TOOLKIT SLIDER
+   TECH STACK
 ========================= */
 
-.stack-slider {
+.tech-stack {
     width: 100%;
+}
+
+.cloud-section {
+    padding: 24px;
+    border: 1px solid rgba(156, 255, 186, .18);
+    border-radius: 18px;
+    background:
+        radial-gradient(circle at 15% 50%, rgba(156, 255, 186, .07), transparent 40%),
+        var(--panel);
     overflow: hidden;
-    position: relative;
-    padding: 10px 0 20px;
 }
 
-.stack-track {
+.cloud-header {
     display: flex;
-    width: max-content;
-    gap: 14px;
-    will-change: transform;
-    animation: stackFloat 35s linear infinite;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.stack-card {
-    flex: 0 0 160px;
-    height: 135px;
+.cloud-header > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
 
+.cloud-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    color: var(--accent);
+    font-size: 25px;
+    background: rgba(156, 255, 186, .06);
+    border: 1px solid rgba(156, 255, 186, .15);
+}
+
+.cloud-header h3 {
+    margin: 0;
+    color: var(--text);
+    font-size: 21px;
+    letter-spacing: -.03em;
+}
+
+.cloud-header p {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.primary-focus {
+    padding: 7px 12px;
+    border: 1px solid rgba(156, 255, 186, .18);
+    border-radius: 999px;
+    color: var(--accent);
+    background: rgba(156, 255, 186, .05);
+    font: 10px var(--mono);
+}
+
+.cloud-content {
+    display: grid;
+    grid-template-columns: minmax(240px, .9fr) 1px minmax(430px, 1.5fr);
+    gap: 22px;
+    align-items: stretch;
+}
+
+.aws-card {
+    min-height: 155px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 13px;
-
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    background: rgba(255, 255, 255, .02);
-
-    transition: .3s;
+    padding: 20px;
+    border: 1px solid rgba(156, 255, 186, .16);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .025);
 }
 
-.stack-card:hover {
-    transform: translateY(-5px);
-    background: rgba(156, 255, 186, .045);
-    border-color: rgba(156, 255, 186, .22);
-}
-
-.stack-card img {
-    width: 55px;
-    height: 55px;
+.aws-card img {
+    width: 120px;
+    height: auto;
     object-fit: contain;
-    display: block;
+    margin-bottom: 8px;
 }
 
-.stack-card span {
-    font: 11px var(--mono);
-    color: #8d9992;
+.aws-card h4 {
+    margin: 0;
+    color: var(--text);
+    font-size: 15px;
+}
+
+.aws-card p {
+    margin: 5px 0 0;
+    color: #6f7d74;
+    font-size: 10px;
+}
+
+.cloud-divider {
+    width: 1px;
+    height: 100%;
+    background: rgba(156, 255, 186, .14);
+}
+
+.services-section h5 {
+    margin: 0 0 10px;
+    color: #84928a;
+    font: 10px var(--mono);
+    letter-spacing: .04em;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.service-card {
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
     text-align: center;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .02);
+    transition: .25s;
 }
 
-@keyframes stackFloat {
-    from {
-        transform: translate3d(0, 0, 0);
+.service-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(156, 255, 186, .25);
+    background: rgba(156, 255, 186, .035);
+}
+
+.service-card img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.service-card h4 {
+    margin: 0;
+    color: var(--text);
+    font-size: 12px;
+}
+
+.service-card p {
+    margin: 5px 0 0;
+    color: #69756e;
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+.other-tech {
+    margin-top: 20px;
+}
+
+.other-tech > h3 {
+    margin: 0;
+    color: var(--text);
+    font-size: 14px;
+}
+
+.other-description {
+    margin: 4px 0 11px;
+    color: #68746d;
+    font-size: 10px;
+}
+
+.tech-categories {
+    display: grid;
+    grid-template-columns: 1.25fr .9fr .9fr 1.25fr;
+    gap: 12px;
+}
+
+.tech-category {
+    min-height: 90px;
+    padding: 13px 14px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .018);
+}
+
+.tech-category h4 {
+    margin: 0 0 10px;
+    color: #b8c2bc;
+    font: 10px var(--mono);
+}
+
+.tech-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.tech-item img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.tech-item span {
+    color: #7f8b84;
+    font: 9px var(--mono);
+}
+
+@media(max-width:900px) {
+    .cloud-content {
+        grid-template-columns: 1fr;
     }
 
-    to {
-        transform: translate3d(calc(-50% - 7px), 0, 0);
+    .cloud-divider {
+        display: none;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tech-categories {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+@media(max-width:640px) {
+    .cloud-section {
+        padding: 18px;
+    }
+
+    .cloud-header {
+        align-items: flex-start;
+    }
+
+    .primary-focus {
+        display: none;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-items {
+        gap: 24px;
+    }
+}
 
 
 .learning-grid {
