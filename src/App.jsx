@@ -116,6 +116,11 @@ function Icon({ name, size = 20 }) {
     mail: <><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></>,
     map: <><path d="m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Z" /><path d="M9 3v15" /><path d="M15 6v15" /></>,
     code: <><path d="m8 9-4 3 4 3" /><path d="m16 9 4 3-4 3" /><path d="m14 5-4 14" /></>,
+    cloud: (
+              <>
+                <path d="M17.5 19H9a6 6 0 1 1 1.2-11.88A5.5 5.5 0 0 1 20 11.5a3.5 3.5 0 0 1-2.5 7.5Z" />
+              </>
+            ),
     check: <path d="m5 12 4 4L19 6" />,
     menu: <><path d="M4 6h16" /><path d="M4 12h16" /><path d="M4 18h16" /></>,
     close: <><path d="m6 6 12 12" /><path d="m18 6-12 12" /></>,
@@ -180,8 +185,8 @@ function App() {
         <section className="hero section" id="home">
           <div className="hero-copy reveal">
             <div className="eyebrow"><span className="status-dot" /> Available for opportunities</div>
-            <p className="hero-kicker">SOFTWARE DEVELOPER - CLOUD & DEVOPS ENTHUSIAST</p>
-            <h1>Building digital experiences with <span>curiosity</span> and code.</h1>
+            <p className="hero-kicker">ASPIRING CLOUD & DEVOPS ENGINEER - SOFTWARE DEVELOPER</p>
+            <h1>Building digital experiences with <span>curiosity</span>.</h1>
             <p className="hero-text">I'm Nikhil S Richie, a Computer Science graduate passionate about cloud technologies, AWS, and DevOps</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">Explore my work <Icon name="arrow" size={18} /></a>
@@ -189,7 +194,7 @@ function App() {
             </div>
             <div className="hero-meta">
               <span><Icon name="map" size={16} /> Kerala, India</span>
-              <span><Icon name="code" size={16} /> React - Node - AWS</span>
+              <span><Icon name="cloud" size={16} /> AWS - Cloud & DevOps</span>
             </div>
           </div>
 
@@ -200,16 +205,16 @@ function App() {
               <div className="profile-top"><span>developer_profile</span><span>01</span></div>
               <div className="profile-photo-wrap"><img src="/nikhil.jpg" alt="Nikhil S Richie" /></div>
               <div className="profile-name">Nikhil S Richie</div>
-              <div className="profile-role">Software Developer</div>
+              <div className="profile-role">Tech Enthusiast</div>
               <div className="profile-line" />
-              <div className="profile-stats"><div><strong>2024</strong><span>Graduated</span></div><div><strong>∞</strong><span>Learning</span></div><div><strong>04</strong><span>Featured</span></div></div>
+              <div className="profile-stats"><div><strong>2024</strong><span>Graduated</span></div><div><strong>∞</strong><span>Learning</span></div></div>
               <div className="terminal"><span>$</span> whoami <b>nikhil</b><i>_</i></div>
             </div>
           </div>
         </section>
 
         <section className="section about" id="about">
-          <div className="section-heading reveal"><span>01 / ABOUT</span><h2>A developer who likes to <em>build</em> and keep learning.</h2></div>
+          <div className="section-heading reveal"><span>01 / ABOUT</span><h2>From code to <em>cloud, </em> always learning.</h2></div>
           <div className="about-grid">
             <div className="about-copy reveal"><p>I'm an aspiring AWS DevOps Engineer with a B.Tech in Computer Science and software development experience. I'm building hands-on knowledge in AWS, Linux, cloud infrastructure, and DevOps practices, with a focus on automation, CI/CD, and scalable applications.</p>
               <p></p><a className="text-link" href="/Nikhil_S_Richie_Resume.pdf" target="_blank" rel="noreferrer">View my resume <Icon name="arrow" size={16} /></a></div>
@@ -217,21 +222,22 @@ function App() {
               {/* <div className="mini-card"><span>01</span><strong>Web Development</strong><p>Responsive interfaces and full-stack applications.</p></div>
               <div className="mini-card"><span>02</span><strong>Cloud Fundamentals</strong><p>Hands-on AWS labs and server-side practice.</p></div>
               <div className="mini-card"><span>03</span><strong>Continuous Learning</strong><p>Learning through projects, documentation and experimentation.</p></div> */}
-              <div className="mini-card">
-                <span>01 / DEVELOPMENT</span>
-                <strong>Web Development</strong>
-                <p>
-                  Building responsive interfaces and full-stack applications
-                  with modern web technologies.
-                </p>
-              </div>
-
-              <div className="mini-card">
-                <span>02 / CLOUD</span>
+             
+               <div className="mini-card">
+                <span>01 / CLOUD</span>
                 <strong>AWS & Cloud Infrastructure</strong>
                 <p>
                   Developing hands-on knowledge of AWS services, Linux,
                   networking and cloud infrastructure.
+                </p>
+              </div>
+
+              <div className="mini-card">
+                <span>02 / DEVELOPMENT</span>
+                <strong>Web Development</strong>
+                <p>
+                  Building responsive interfaces and full-stack applications
+                  with modern web technologies.
                 </p>
               </div>
 
@@ -560,12 +566,12 @@ function App() {
         <section className="section contact" id="contact">
           <div className="contact-card reveal">
             <div><span className="section-label">06 / CONTACT</span><h2>Have an idea, opportunity, or just want to talk tech?</h2><p>I'm open to connecting with developers, teams and companies. Feel free to reach out.</p></div>
-            <div className="contact-actions"><a className="button button-primary" href="mailto:nikhil.s.richie@gmail.com">Send me an email <Icon name="mail" size={18} /></a><div className="socials"><a href="https://github.com/nkill-star" target="_blank" rel="noreferrer" aria-label="GitHub"><Icon name="github" /></a><a href="https://www.linkedin.com/in/nikhil-s-richie/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Icon name="linkedin" /></a><a href="https://www.instagram.com/n._kill/?hl=en" target="_blank" rel="noreferrer" aria-label="Instagram"><span className="instagram-icon">?</span></a></div></div>
+            <div className="contact-actions"><a className="button button-primary" href="mailto:nikhil.s.richie@gmail.com">Send me an email <Icon name="mail" size={18} /></a><div className="socials"><a href="https://github.com/nkill-star" target="_blank" rel="noreferrer" aria-label="GitHub"><Icon name="github" /></a><a href="https://www.linkedin.com/in/nikhil-s-richie/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Icon name="linkedin" /></a></div></div>
           </div>
         </section>
       </main>
 
-      <footer className="footer"><span></span><span>© {new Date().getFullYear()} Nikhil S Richie</span><a href="#home">Back to top ?</a></footer>
+      <footer className="footer"><span></span><span>© {new Date().getFullYear()} Nikhil S Richie</span><a href="#home">Back to top</a></footer>
     </div>
     </>
   )

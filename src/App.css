@@ -932,7 +932,7 @@ h1 span {
     }
 }
 
-@media(max-width:640px) {
+/* @media(max-width:640px) {
     .cloud-section {
         padding: 18px;
     }
@@ -943,6 +943,38 @@ h1 span {
 
     .primary-focus {
         display: none;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-items {
+        gap: 24px;
+    }
+} */
+ @media(max-width:640px) {
+    .cloud-section {
+        padding: 18px;
+    }
+
+    .cloud-header {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .primary-focus {
+        display: inline-flex;
+        flex-shrink: 0;
+
+        padding: 6px 9px;
+
+        font-size: 9px;
+        white-space: nowrap;
     }
 
     .service-grid {
@@ -1253,21 +1285,47 @@ h1 span {
 }
 
 .footer {
-    border-top: 1px solid var(--line);
+    /* border-top: 1px solid var(--line);
     padding: 24px 0 32px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
     color: #56625b;
-    font: 10px var(--mono)
+    font: 10px var(--mono) */
+      border-top: 1px solid var(--line);
+    padding: 24px 0 32px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    gap: 20px;
+    color: #56625b;
+    font: 10px var(--mono);
 }
 
-.footer a {
+.footer > span:first-child {
+  justify-self: start;
+}
+
+/* .footer a {
     color: #7b8880
+} */
+
+.footer > span:nth-child(2) {
+  justify-self: center;
 }
 
-.footer a:hover {
+.footer > a {
+   justify-self: end;
+    color: #7b8880;
+}
+
+/* .footer a:hover {
     color: var(--accent)
+} */
+ .footer a:hover {
+  color: var(--accent);
 }
 
 .reveal {
