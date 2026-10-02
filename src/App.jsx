@@ -1,6 +1,7 @@
 
 import './App.css'
 import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg"
 // import About from './components/About'
 // import ConnectMe from './components/ConnectMe'
 // import LearningStack from './components/LearningStack'
@@ -461,7 +462,7 @@ function App() {
                     </div>
 
                     <div className="tech-item">
-                      <img src="/React.png" alt="React" />
+                      <img src={reactLogo} alt="React" />
                       <span>React</span>
                     </div>
 
