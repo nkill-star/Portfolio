@@ -13,13 +13,7 @@ import reactLogo from "./assets/react.svg"
 
 
 const projects = [
-  // {
-  //   title: 'Full-Stack Netflix Clone',
-  //   description: 'A full-stack streaming-style application built to practice modern React development, authentication and backend integration.',
-  //   image: '/netflix_fullstack.png',
-  //   tags: ['React', 'Node.js', 'Express', 'MongoDB'],
-  //   link: 'https://github.com/nkill-star/Full-Stack-Netflix-Clone.git',
-  // },
+  
   {
     title: 'QuickCarz',
     description: 'QuickCarz is a full-stack car rental platform where users can search and book cars by location and availability. Car owners can list, manage, and toggle the availability of their vehicles. A smooth, responsive interface built with modern technologies ensures a seamless rental experience.',
@@ -34,34 +28,6 @@ const projects = [
     tags: ['React', 'Tailwind CSS'],
     link: 'https://github.com/nkill-star/Conference-Ticket-Generator.git',
   },
-  // {
-  //   title: 'User Authentication & Admin Panel',
-  //   description: 'Authentication-focused web application with sessions, protected routes and an admin interface for user management.',
-  //   image: '/userwebapp.webp',
-  //   tags: ['Node.js', 'Express', 'MongoDB', 'Bootstrap'],
-  //   link: 'https://github.com/nkill-star/userAuthentication-with-Admin-panel.git',
-  // },
-  // {
-  //   title: 'Netflix Clone',
-  //   description: 'Responsive Netflix-inspired landing experience created to sharpen frontend layout, responsive design and UI implementation skills.',
-  //   image: '/netflixland.webp',
-  //   tags: ['HTML', 'CSS', 'Bootstrap'],
-  //   link: 'https://github.com/nkill-star/netflix-clone.git',
-  // },
-  // {
-  //   title: 'Instagram Clone',
-  //   description: 'A frontend recreation focused on responsive layouts, spacing, typography and component-style UI thinking.',
-  //   image: '/instaland.webp',
-  //   tags: ['HTML', 'CSS'],
-  //   link: 'https://github.com/nkill-star/Instagram-clone.git',
-  // },
-  // {
-  //   title: 'Starbucks Clone',
-  //   description: 'Responsive landing page recreation with a focus on visual accuracy and clean CSS structure.',
-  //   image: '/starbucksland.webp',
-  //   tags: ['HTML', 'CSS'],
-  //   link: 'https://github.com/nkill-star/starbucks-clone.git',
-  // },
   {
     title: 'Blog Preview Card',
     description: 'Frontend Mentor - Blog Preview Card Solution This is my solution to the Blog Preview Card challenge on Frontend Mentor. Frontend Mentor challenges help me improve my coding skills by building realistic and hands-on projects.',
@@ -76,30 +42,10 @@ const projects = [
     tags: ['React', 'Tailwind CSS'],
     link: 'https://github.com/nkill-star/ToDo-App.git',
   },
-  // {
-  //   title: 'Xs & Os Game',
-  //   description: 'A lightweight browser game built to practice JavaScript logic, interaction handling and state updates.',
-  //   image: '/game.webp',
-  //   tags: ['JavaScript', 'HTML', 'CSS'],
-  //   link: 'https://github.com/nkill-star/Xs-and-Os-game.git',
-  // },
+  
 ]
 
-// const stack = [
-//   ['EC2', '/aws-ec2.svg'],
-//   ['VPC', '/AWS-VPC.png'],
-//   ['S3', '/s3.png'],
-//   ['HTML5', '/html.webp'],
-//   ['CSS3', '/css.webp'],
-//   ['JavaScript', '/javascript.webp'],
-//   ['Bootstrap', '/bootstrap.webp'],
-//   ['Node.js', '/node.png'],
-//   ['Express.js', '/express.webp'],
-//   ['MongoDB', '/mongo.webp'],
-//   ['React', '/react.png'],
-//   ['Tailwind CSS', '/tailwind.png'],
 
-// ]
 
 const learning = [
   ['AWS', 'EC2 · VPC · IAM · S3', 'Cloud fundamentals and hands-on labs'],
@@ -175,8 +121,9 @@ function App() {
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#stack">Stack</a>
-          <a href="#projects">Projects</a>
+          
           <a href="#learning">Learning</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
         <a className="nav-cta" href="/Nikhil_S_Richie_Resume.pdf" target="_blank" rel="noreferrer">Resume <Icon name="external" size={15} /></a>
@@ -215,14 +162,12 @@ function App() {
         </section>
 
         <section className="section about" id="about">
-          <div className="section-heading reveal"><span>01 / ABOUT</span><h2>From code to <em>cloud, </em> always learning.</h2></div>
+          <div className="section-heading reveal"><span>01 / ABOUT</span><h2>From code to <em>cloud</em>, always learning.</h2></div>
           <div className="about-grid">
             <div className="about-copy reveal"><p>I'm an aspiring AWS DevOps Engineer with a B.Tech in Computer Science and software development experience. I'm building hands-on knowledge in AWS, Linux, cloud infrastructure, and DevOps practices, with a focus on automation, CI/CD, and scalable applications.</p>
               <p></p><a className="text-link" href="/Nikhil_S_Richie_Resume.pdf" target="_blank" rel="noreferrer">View my resume <Icon name="arrow" size={16} /></a></div>
             <div className="about-cards reveal delay-one">
-              {/* <div className="mini-card"><span>01</span><strong>Web Development</strong><p>Responsive interfaces and full-stack applications.</p></div>
-              <div className="mini-card"><span>02</span><strong>Cloud Fundamentals</strong><p>Hands-on AWS labs and server-side practice.</p></div>
-              <div className="mini-card"><span>03</span><strong>Continuous Learning</strong><p>Learning through projects, documentation and experimentation.</p></div> */}
+             
              
                <div className="mini-card">
                 <span>01 / CLOUD</span>
@@ -325,26 +270,13 @@ function App() {
           </div>
         </section>
 
-        {/* <section className="section" id="stack">
-          <div className="section-heading reveal"><span>03 / TOOLKIT</span><h2>Technologies I'm <em>familiar with</em>.</h2></div>
-          
-          <div className="stack-slider">
-          <div className="stack-track">
-            {[...stack, ...stack].map(([name, image], index) => (
-              <div className="stack-card" key={`${name}-${index}`}>
-                <img src={image} alt={name} decoding="async" />
-                <span>{name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-        </section> */}
+       
 
         <section className="section" id="stack">
           <div className="section-heading reveal">
-            <span>03 / TOOLKIT</span>
+            <span>03 / STACK</span>
             <h2>
-              Technologies I'm <em>familiar with</em>.
+              Technologies I'm <em>familiar </em>with.
             </h2>
           </div>
 
@@ -558,7 +490,7 @@ function App() {
         </section>
 
         <section className="section" id="projects">
-          <div className="section-heading projects-heading reveal"><span>05 / SELECTED WORK</span><h2>Things I've <em>built</em>.</h2><p>Hands-on projects that helped me turn concepts into working software.</p></div>
+          <div className="section-heading projects-heading reveal"><span>05 / PROJECTS</span><h2>Things I've <em>built</em>.</h2><p>Hands-on projects that helped me turn concepts into working software.</p></div>
           <div className="projects-grid">
             {projects.map((project, index) => <article className="project-card reveal" style={{ '--delay': `${index * 70}ms` }} key={project.title}><a className="project-image" href={project.link} target="_blank" rel="noreferrer"><img src={project.image} alt={`${project.title} preview`} /><span className="project-overlay">View on GitHub <Icon name="external" size={16} /></span></a><div className="project-content"><div className="project-title-row"><h3>{project.title}</h3><a href={project.link} target="_blank" rel="noreferrer" aria-label={`Open ${project.title}`}><Icon name="arrow" size={18} /></a></div><p>{project.description}</p><div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div></article>)}
           </div>
